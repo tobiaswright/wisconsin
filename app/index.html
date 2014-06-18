@@ -1,0 +1,148 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>wisconsin</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link href='http://fonts.googleapis.com/css?family=Titan+One' rel='stylesheet' type='text/css'>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header">
+            <div class="container">
+                <h3>wisconsin</h3>
+                <h4>by @tobiaswright</h4>
+            </div>
+        </div>
+
+        <div class="scrollheader">
+            <div class="container">
+                <h3>wisconsin</h3>
+                <h4>by @tobiaswright</h4>
+            </div>
+        </div>
+
+        <div class="container" id="content">
+                <h5>Dates of your trip</h5>
+                <div class="input-daterange input-group" id="datepicker">
+                    <input type="text" class="big form-control" name="start" />
+                    <span class="input-group-addon">to</span>
+                    <input type="text" class="big form-control" name="end" />
+                </div>
+                <h5>Post to these networks</h5>
+                <div class="networks">
+                    <ul class="logos">
+                    <li>
+                    <img src="images/twitter.png" width="120px"><br />
+                    <i class="fa fa-check-circle-o fa-2x"></i>
+                    </li><li>
+                    <img src="images/instagram.png" width="120px" style="padding-top:12px">
+                    <i class="fa fa-check-circle-o insta fa-2x"></i>
+                    </li><li>
+                    <img src="images/yammer.png" width="120px" style="padding-top:8px">
+                    <i class="fa fa-check-circle-o fa-2x"></i>
+                    </li><li>
+                    <img src="images/facebook.png" width="120px">
+                    <i class="fa fa-check-circle-o fa-2x"></i>
+                    </li>
+                    </ul>
+                     
+                </div>
+                <h5>Build digital footprint</h5>
+                                <h6>Pictures</h6>
+                    <div id="instagram"></div>
+                <h6>Status Updates</h6>
+                    <div id="status"></div>
+
+                <h6>Miscellaneous</h6>
+                    <p>People you may want follow</p>
+                    <div id="misc"></div>
+
+                 <button id="done" class="btn btn-success btn-block btn-large">Book your digital trip!</button>
+        </div>
+
+
+
+        <div class="container">
+        <div class="footer">
+            
+                <p>♥ Wisconsin</p>
+            </div>
+        </div>
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+        <script src="bower_components/handlebars/handlebars.js"></script>
+        <!-- endbower -->
+        <script src="scripts/ig.js"></script>
+        <script id="statuses" type="text/x-handlebars-template">
+        <ul>
+        {{#each this}}
+            <li>
+            <i class="fa fa-check-circle-o"></i>
+            {{this}}
+            </li>
+        {{/each}}
+        </ul>
+        </script>
+
+        <script id="instaImages" type="text/x-handlebars-template">
+        <ul>
+        {{#each this}}
+            <li class="img">
+            <img src="{{this}}">
+             <i class="fa fa-check-circle-o fa-4x fa-inverse"></i>
+            </li>
+        {{/each}}
+        </ul>
+        </script>
+
+        <script id="newFriends" type="text/x-handlebars-template">
+        <ul id="twitterFriends">
+        {{#each this}}
+            <li class="tweetf">
+            <i class="fa fa-check-circle-o fa-2x"></i>
+            <img src="{{image}}">
+            <p>{{name}}</p>
+            </li>
+        {{/each}}
+        </ul>
+        </script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/plugins.js -->
+        <script src="bower_components/sass-bootstrap/js/affix.js"></script>
+        <script src="bower_components/sass-bootstrap/js/alert.js"></script>
+        <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
+        <script src="bower_components/sass-bootstrap/js/modal.js"></script>
+        <script src="bower_components/sass-bootstrap/js/transition.js"></script>
+        <script src="bower_components/sass-bootstrap/js/button.js"></script>
+        <script src="bower_components/sass-bootstrap/js/popover.js"></script>
+        <script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+        <script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
+        <script src="bower_components/sass-bootstrap/js/collapse.js"></script>
+        <script src="bower_components/sass-bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
